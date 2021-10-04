@@ -16,10 +16,6 @@ public class DriverServiceImpl implements DriverService {
 
 	private final DriverRepository driverRepository;
 	
-	public DriverServiceImpl(DriverRepository driverRepository) {
-		this.driverRepository = driverRepository;
-	}
-	
 	@Override
 	public List<Driver> getAllDrivers() {
 		return driverRepository.getAllDrivers();

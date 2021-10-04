@@ -21,11 +21,6 @@ public class CarRaceController {
 	private final CarService carService;
 	private final DriverService driverService;
 	
-	public CarRaceController(CarService carService, DriverService driverService) {
-		this.carService = carService;
-		this.driverService = driverService;
-	}
-	
 	@GetMapping("/cars")
 	public List<Car> getAllCars() {
 		return carService.getAllCars();

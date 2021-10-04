@@ -16,10 +16,6 @@ public class CarServiceImpl implements CarService {
 	
 	private final CarRepository carRepository;
 	
-	public CarServiceImpl(CarRepository carRepository) {
-		this.carRepository = carRepository;
-	}
-	
 	@Override
 	public List<Car> getAllCars() {
 		return carRepository.getAllCars();
